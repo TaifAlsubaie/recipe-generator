@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Chat from "../components/Chat";
 
 function MainLayout() {
   return (
@@ -21,12 +22,13 @@ function MainLayout() {
                 Saved Recipes ❤️
               </Link>
             </div>
+
             <Link
-                className="btn btn-sm login-nav-btn ms-3"
-                to="/login"
-              >
-                Login
-              </Link>
+              className="btn btn-sm login-nav-btn ms-3"
+              to="/login"
+            >
+              Login
+            </Link>
 
           </div>
         </nav>
@@ -35,6 +37,9 @@ function MainLayout() {
       <main className="flex-grow-1">
         <Outlet />
       </main>
+
+      {/* AI Cooking Assistant */}
+      <Chat />
 
       <footer className="py-4 mt-5">
         <div className="container text-center">
