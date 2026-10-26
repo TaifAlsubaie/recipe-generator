@@ -16,7 +16,7 @@ function Home() {
 
         <h2>
           Turn your ingredients into
-          <span> delicious recipes 🍳</span>
+          <span> delicious recipes 🍳  </span>
         </h2>
 
         <p className="mt-3">
